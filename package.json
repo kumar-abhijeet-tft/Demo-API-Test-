@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Google API test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+"config": {
+  "host": "localhost",
+  "port": "4444"
+},
+"devDependencies": {
+  "cucumber": "3.1.0",
+  "should": "13.1.0",
+  "request": "2.83.0"
+}
+
+
