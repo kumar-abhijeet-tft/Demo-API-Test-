@@ -1,23 +1,28 @@
 {
-  "name": "package",
+  "name": "demo-api-test-",
   "version": "1.0.0",
-  "description": "Google API test",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": " ./test/features/*.feature --require test/step-definitions/ --require test/support",
+    "fix:lint": "./node_modules/.bin/eslint --fix Demo-API-Test-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumar-abhijeet-tft/Demo-API-Test-.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumar-abhijeet-tft/Demo-API-Test-/issues"
+  },
+  "homepage": "https://github.com/kumar-abhijeet-tft/Demo-API-Test-#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.7.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
 }
-
-"config": {
-  "host": "localhost",
-  "port": "4444"
-},
-"devDependencies": {
-  "cucumber": "3.1.0",
-  "should": "13.1.0",
-  "request": "2.83.0"
-}
-
-
